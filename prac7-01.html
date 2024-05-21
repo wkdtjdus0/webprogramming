@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>난수</title>
+</head>
+<body>
+<h3>난수 10 개 생성</h3>
+<hr>
+<script>
+let n=[]; // 배열 n 선언
+
+// 난수 10개 생성
+for(let i=0;i<10;i++){
+	let rand1=Math.floor(Math.random()*100) + 1;
+	n[i]=rand1;
+}
+// 난수 10개 생성
+
+for(let i=0; i<10; i++) // 배열 출력
+	document.write(n[i] + " ");
+
+document.write("<hr>");
+
+// 큰 수 찾아서 출력
+let max=n[0];
+for(let i=1;i<10;i++){
+	if(max < n[i]){
+		max=n[i];
+	}
+}
+document.write("가장 큰 수는 "+max);
+// 큰 수 찾아서 출력
+
+document.write("<hr>");
+n.sort(); // 배열 정렬
+for(let i=0; i<10; i++) // 배열 출력
+	document.write(n[i] + " ");
+</script>
+</body>
+</html>

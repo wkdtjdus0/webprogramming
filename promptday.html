@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>출근 혹은 휴일</title>
+    </head>
+    <body>
+        <script>
+            let day=prompt("요일을 입력하시오.","월");
+            switch(day){
+                case "월":
+                case "화":
+                case "수":
+                case "목":
+                    alert("출근");
+                    break;
+                case "금":
+                case "토":
+                case "일":
+                    alert("휴일");
+                    break;
+                default:
+                    break;
+            }
+        </script>
+    </body>
+</html>
